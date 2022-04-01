@@ -1,0 +1,31 @@
+using System;
+using System.Linq;
+using System.Numerics;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+
+
+namespace AssociativeArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            List<string> input = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToList();
+
+            StringBuilder result = new StringBuilder();
+
+            foreach (string item in input)
+            {
+                for (int i = 0; i < item.Length; i++)
+                {
+                    result.Append(item);
+                }
+            }
+
+            Console.WriteLine(result);
+        }
+    }
+}
